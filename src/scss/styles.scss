@@ -8,23 +8,13 @@
   width: 13vw;
   height: 33vh;
   top: 33vh;
-  left: 42.5vw;
+  left: 43.5vw;
   display: flex;
   background: #f0f0f0;
   text-align: center;
   border-radius: 2%;
 }
-@media screen and (max-width: 700px) {
-  .popup {
-    max-width: 300px;
-    width: 70vw;
-    left: 15vw;
-    height: 50vh;
-  }
-  .btn-submit {
-    margin-top: 5%;
-  }
-}
+
 .form-header {
   width: 100%;
   display: block;
@@ -85,7 +75,7 @@
 }
 .agree-checkbox-text {
   position: absolute;
-  font-size: x-small;
+  font-size: 65%;
   display: inline;
   left: 12%;
   margin-top: 7%;
@@ -95,12 +85,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
   background: #000;
   color: white;
-  padding: 5%;
-  width: 85%;
+  padding: 4%;
   margin-top: 10%;
+  width: 75%;
 }
 
 .email {
@@ -108,6 +97,7 @@
   border: 1px solid grey;
   height: 40%;
   width: 80%;
+  font-size: small;
 }
 .password {
   background: whitesmoke;
@@ -124,4 +114,33 @@ input::placeholder {
 }
 p {
   margin-left: 10%;
+}
+#validation-alert {
+  position: absolute;
+  text-align: center;
+  min-width: 200px;
+  border-radius: 2%;
+  width: 13vw;
+  height: 33vh;
+  top: 30vh;
+  left: 43.5vw;
+  background: #ffcccc;
+  font-size: medium;
+}
+@media screen and (max-width: 700px) {
+  .popup {
+    max-width: 300px;
+    width: 70vw;
+    left: 15vw;
+    height: 50vh;
+  }
+  #validation-alert {
+    max-width: 300px;
+    width: 70vw;
+    left: 15vw;
+    height: 50vh;
+  }
+  .btn-submit {
+    margin-top: 5%;
+  }
 }
