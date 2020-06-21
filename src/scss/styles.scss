@@ -1,2 +1,127 @@
 // Here goes your CSS
-@import 'layout/main';
+@import "layout/main";
+
+.popup {
+  visibility: hidden;
+  position: absolute;
+  min-width: 200px;
+  width: 13vw;
+  height: 33vh;
+  top: 33vh;
+  left: 42.5vw;
+  display: flex;
+  background: #f0f0f0;
+  text-align: center;
+  border-radius: 2%;
+}
+@media screen and (max-width: 700px) {
+  .popup {
+    max-width: 300px;
+    width: 70vw;
+    left: 15vw;
+    height: 50vh;
+  }
+  .btn-submit {
+    margin-top: 5%;
+  }
+}
+.form-header {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lobster", cursive;
+  font-size: x-large;
+}
+
+.fa-times-circle {
+  right: -1.2%;
+  top: -0.8%;
+  position: absolute;
+  font-size: 150%;
+}
+.input-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30%;
+}
+
+.customCheckbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#customCheckboxInput {
+  opacity: 0;
+}
+
+.customCheckbox label {
+  cursor: pointer;
+  font-size: xx-small;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 1px solid black;
+  left: 8%;
+  margin-top: 6%;
+}
+
+.customCheckbox input + label::after {
+  content: "\2714";
+  color: #000;
+  opacity: 0;
+  font-weight: bold;
+  font-size: small;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+.customCheckbox input:checked + label::after {
+  opacity: 1;
+}
+.agree-checkbox-text {
+  position: absolute;
+  font-size: x-small;
+  display: inline;
+  left: 12%;
+  margin-top: 7%;
+}
+
+.btn-submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  background: #000;
+  color: white;
+  padding: 5%;
+  width: 85%;
+  margin-top: 10%;
+}
+
+.email {
+  background: whitesmoke;
+  border: 1px solid grey;
+  height: 40%;
+  width: 80%;
+}
+.password {
+  background: whitesmoke;
+  margin-top: 5%;
+  border: 1px solid grey;
+  height: 40%;
+  width: 80%;
+}
+
+input::placeholder {
+  padding: 10%;
+  font-size: smaller;
+  font-family: "Lato", sans-serif;
+}
+p {
+  margin-left: 10%;
+}
