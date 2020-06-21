@@ -1,6 +1,10 @@
 // Here goes your CSS
 @import "layout/main";
 
+$warning-color: #ffcccc;
+$light-color: #f0f0f0;
+$input-color: #f5f5f5;
+
 .popup {
   visibility: hidden;
   position: absolute;
@@ -10,7 +14,7 @@
   top: 33vh;
   left: 43.5vw;
   display: flex;
-  background: #f0f0f0;
+  background: $light-color;
   text-align: center;
   border-radius: 2%;
 }
@@ -53,7 +57,7 @@
   position: absolute;
   width: 12px;
   height: 12px;
-  background-color: white;
+  background-color: $input-color;
   border: 1px solid black;
   left: 8%;
   margin-top: 6%;
@@ -86,21 +90,21 @@
   margin-left: auto;
   margin-right: auto;
   background: #000;
-  color: white;
+  color: $input-color;
   padding: 4%;
   margin-top: 10%;
   width: 75%;
 }
 
 .email {
-  background: whitesmoke;
+  background: $input-color;
   border: 1px solid grey;
   height: 40%;
   width: 80%;
   font-size: small;
 }
 .password {
-  background: whitesmoke;
+  background: $input-color;
   margin-top: 5%;
   border: 1px solid grey;
   height: 40%;
@@ -124,8 +128,15 @@ p {
   height: 33vh;
   top: 30vh;
   left: 43.5vw;
-  background: #ffcccc;
+  background: $warning-color;
   font-size: medium;
+}
+#success-message {
+  position: absolute;
+  font-family: "Lobster", cursive;
+  font-size: 42px;
+  height: 60px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 700px) {
   .popup {
